@@ -8,7 +8,7 @@ This script is similar to [dzomb's **tuneout** script](https://github.com/dzomb/
 
 - It targets `Music.app` instead of the outdated `iTunes.app`
 - For simplicity, it uses a hardcoded path _(which you can edit yourself)_ instead of prompting you to choose a file in Finder every time you run it
-- It can run directly in Script Editor without requiring you to build it to an Application _(although you can still do that if you want)_
+- It's meant to be run directly from **Script Editor**, without needing to be built to an Application
 - It writes the track information to the text file in UTF-8 format, meaning that OBS will display Unicode characters (like the `é` in `Pokémon`) correctly, instead of going blank when you're playing a song with special characters in the title
 
 ## How to use this script
@@ -24,12 +24,6 @@ This script is similar to [dzomb's **tuneout** script](https://github.com/dzomb/
 5. The script will run indefinitely, continually updating the text file every few seconds. In order to stop the script, simply click the **Stop** button or close **Script Editor**.
 
 Once you've confirmed that `track_name.txt` is being updated correctly, you can use it in OBS: add a **Text** source, check the **Read from file** box in its properties, then scroll down to **Text File**, click **Browse**, and select your `track_name.txt` file.
-
-## Building to an Application
-
-If you'd find it more convenient to run TrackSniffer as an application that can be pinned to your Dock (instead of via Script Editor), you can do that as well. Simply open `TrackSniffer.scpt` in Script Editor as usual, then choose **File** &rarr; **Export...**, change the **File Format** dropdown to **Application**, and then save the file as `TrackSniffer.app`. You can then run that Application like any other.
-
-If you make any of the changes described below, then you'll need to repeat these steps to export a new version of `TrackSniffer.app`.
 
 ## Customizing the script
 
